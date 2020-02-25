@@ -17,7 +17,6 @@ Installing an R environment (e.g. Console R, Rgui, Rstudio, etc.) is optional, b
 RStudio Software: https://www.rstudio.com/products/rstudio/download/
 
 ### Download PUFFIN
-#### Method 1:
 The easiest way to download PUFFIN is by downloading the PUFFIN files from GitHub as a ZIP folder and unzipping it to your desired directory.
 
 #### Setup wgrib2
