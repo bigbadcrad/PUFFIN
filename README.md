@@ -7,12 +7,13 @@ This repository holds files necessary to run the Probabilistic Urban Flash Flood
 These instructions will help you get a copy of PUFFIN up and running on your local machine.
 
 ### Required Software
-To run PUFFIN, you must have both R and the EPA SWMM model software installed on your local machine.
+To run PUFFIN, you must have both R and the EPA SWMM model software installed on your local machine.\
 PUFFIN was developed and tested using R version 3.6.2.
-R: https://www.r-project.org/
+
+R: https://www.r-project.org/ \
 EPA SWMM: https://www.epa.gov/water-research/storm-water-management-model-swmm
 
-Installing an R environment (e.g. Console R, Rgui, Rstudio, etc.) is optional, but highly recommended.
+Installing an R environment (e.g. Console R, Rgui, Rstudio, etc.) is optional, but highly recommended.\
 RStudio Software: https://www.rstudio.com/products/rstudio/download/
 
 ### Download PUFFIN
