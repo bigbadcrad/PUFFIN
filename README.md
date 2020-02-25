@@ -29,10 +29,10 @@ PUFFIN includes a precompiled version of the wgrib2 program. However, in order f
 4) The "Edit environment variable" UI will appear. Click "New" and add the path to the wgrib2 folder included in PUFFIN e.g. "[user path]\PUFFIN\App\www\wgrib2"
 
 ### Run PUFFIN
-PUFFIN can be run by running the "RunApp.R" script from the R console or through any R environment. RStudio makes it easy to run Shiny apps, and you can run PUFFIN as follows:
+PUFFIN can be run by running the "RunApp.R" script from the R console or through any R environment. However, RStudio makes it easy to run Shiny apps, and you can run PUFFIN as follows:
 1) Open RStudio
-2) Open the "PUFFIN.Rproj" R project file
-3) Open the "RunApp.R" script
+2) Open the "PUFFIN.Rproj" R project file using RStudio
+3) Open the "RunApp.R" script in RStudio
 4) Click RStudio's "Run App" button
 
 ## Author
