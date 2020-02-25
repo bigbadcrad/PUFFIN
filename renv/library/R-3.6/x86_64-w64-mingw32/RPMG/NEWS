@@ -1,0 +1,7 @@
+NEWS for RPMG
+========================
+
+2.1-2	2012-07-02
+	added breakline function for splitting vectors
+	added slideshow function to replace powerpoint presentation
+

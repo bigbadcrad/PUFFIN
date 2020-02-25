@@ -1,0 +1,5 @@
+LIDAR                   Canopy LIDAR data
+mba.points              Point approximation from bivariate scattered
+                        data using multilevel B-splines
+mba.surf                Surface approximation from bivariate scattered
+                        data using multilevel B-splines

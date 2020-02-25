@@ -1,0 +1,17 @@
+# Export all names
+exportPattern(".")
+useDynLib(GEOmap)
+import(RPMG)
+import(fields)
+importFrom(MBA,mba.surf)
+importFrom(splancs,inout, areapl, as.points)
+importFrom("grDevices", "adjustcolor", "col2rgb", "dev.cur",
+             "dev.list", "dev.new", "dev.next", "dev.off", "dev.set",
+             "gray", "grey", "postscript", "ps.options", "rainbow",
+             "rgb", "terrain.colors", "topo.colors", "trans3d")
+importFrom("graphics", "abline", "arrows", "axTicks", "axis", "box",
+             "contour", "image", "lines", "locator", "mtext", "par",
+             "persp", "plot", "points", "polygon", "rect", "segments",
+             "text", "title")
+importFrom("stats", "median")
+importFrom("utils", "write.table")

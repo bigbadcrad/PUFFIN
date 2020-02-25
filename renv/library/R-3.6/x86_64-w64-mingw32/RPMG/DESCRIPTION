@@ -1,0 +1,18 @@
+Package: RPMG
+Type: Package
+Title: Graphical User Interface (GUI) for Interactive R Analysis
+        Sessions
+Version: 2.2-3
+Date: 2019-09-20
+Authors@R: c(person(given="Jonathan M.", family="Lees",
+	   role = c("aut", "cre"),email = "jonathan.lees@unc.edu"), person("Jake", "Anderson", role = "ctb", email = "ajakef@gmail.com"))
+Author: Jonathan M. Lees [aut, cre],
+  Jake Anderson [ctb]
+Maintainer: Jonathan M. Lees <jonathan.lees@unc.edu>
+Description: Really Poor Man's Graphical User Interface, used to create interactive R analysis sessions with simple R commands.
+License: GPL (>= 2)
+Packaged: 2019-09-20 14:34:59 UTC; lees
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2019-09-23 10:30:02 UTC
+Built: R 3.6.1; ; 2019-09-27 22:23:52 UTC; windows

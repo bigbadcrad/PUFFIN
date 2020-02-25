@@ -1,0 +1,16 @@
+autoplot.inp            Plot a swmm model structure using ggplot2
+convert_to_sf           Convert swmm objects to simple feature
+                        geometries
+get_out_content         Get the content of an .out file.
+get_out_version         Get the swmm version the .out file was
+                        generated with
+inp_to_files            Convert SWMM's .inp to .shp and txt files
+read_inp                Read SWMM's .inp file
+read_lid_rpt            Read SWMM's LID Report File
+read_out                Read time series data from SWMM's .out file
+read_rpt                Read SWMM's .rpt file
+run_swmm                Initiate a simulation run
+shp_to_inp              Convert *.shp files to SWMM's *.inp file
+summary.inp             Show summary of a swmm model structure
+swmmr                   'swmmr' package
+write_inp               Write SWMM's .inp file

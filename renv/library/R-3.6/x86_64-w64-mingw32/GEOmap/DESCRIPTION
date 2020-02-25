@@ -1,0 +1,21 @@
+Package: GEOmap
+Type: Package
+Title: Topographic and Geologic Mapping
+Version: 2.4-4
+Date: 2018-01-17
+Depends: R (>= 3.0)
+Imports: RPMG, splancs, fields, MBA
+Suggests: geomapdata, maps, RFOC
+LazyData: yes
+Authors@R: c(person(given="Jonathan M.", family="Lees",
+                    role = c("aut", "cre"),email = "jonathan.lees@unc.edu"))
+Author: Jonathan M. Lees [aut, cre]
+Maintainer: Jonathan M. Lees <jonathan.lees@unc.edu>
+Description: Set of routines for making Map Projections (forward and inverse), Topographic Maps, Perspective plots, Geological Maps, geological map symbols, geological databases, interactive plotting and selection of focus regions.
+License: GPL (>= 2)
+Packaged: 2018-01-17 23:54:24 UTC; lees
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2018-01-18 15:14:14 UTC
+Built: R 3.6.2; x86_64-w64-mingw32; 2019-12-27 16:45:02 UTC; windows
+Archs: i386, x64

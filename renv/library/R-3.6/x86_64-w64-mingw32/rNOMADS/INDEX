@@ -1,0 +1,31 @@
+ArchiveGribGrab         Download archived model data from the NOMADS
+                        server.
+BuildProfile            Get model data at a specific point.
+CheckNOMADSArchive      Check to see if archived data exists.
+CrawlModels             Get Available Model Runs
+DODSGrab                Download model data from the NOMADS server
+                        using the GrADS-DODS system.
+GetClosestForecasts     Get the forecast time closest to a given date
+                        for a given model
+GetDODSDates            Find available model run dates for data on the
+                        GrADS - DODS system.
+GetDODSModelRunInfo     Get model coverage and data information for
+                        models on GrADS-DODS system.
+GetDODSModelRuns        Find available model runs on the GrADS - DODS
+                        system.
+GribGrab                Download grib file from the NOMADS server.
+GribInfo                Get grib file inventory.
+LinkExtractor           Extracts links from web pages
+MagnitudeAzimuth        Convert zonal-meridional wind speeds to
+                        magnitude/azimuth.
+ModelGrid               Transform model data into an array
+NOMADSArchiveList       Archived models available for download through
+                        rNOMADS
+NOMADSRealTimeList      Models available for download through rNOMADS
+ParseModelPage          Extract predictions, levels, and variables
+PlotWindProfile         Plot wind speed and direction
+ReadGrib                Extract data from grib files
+SubsetNOMADS            Subset model data output
+WebCrawler              Get web pages
+rNOMADS-package         An interface to the NOAA Operational Model
+                        Archive and Distribution System
