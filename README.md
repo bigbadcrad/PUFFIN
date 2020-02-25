@@ -18,14 +18,7 @@ RStudio Software: https://www.rstudio.com/products/rstudio/download/
 
 ### Download PUFFIN
 #### Method 1:
-The easiest way to download PUFFIN is by retrieving the app directly in R from this GitHub repository:
-```
-install.packages('shiny')
-library(shiny)
-runGitHub('PUFFIN','bigbadcrad')
-```
-#### Method 2:
-Alternatively, you can clone the git repository by downloading the PUFFIN files from GitHub as a ZIP folder and unzipping it to your desired directory.
+The easiest way to download PUFFIN is by downloading the PUFFIN files from GitHub as a ZIP folder and unzipping it to your desired directory.
 
 #### Setup wgrib2
 PUFFIN uses the NCEP wgrib2 program to read and extract forecast data from retrieved GRIB files. An overview of wgrib2 can be found here: https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/
