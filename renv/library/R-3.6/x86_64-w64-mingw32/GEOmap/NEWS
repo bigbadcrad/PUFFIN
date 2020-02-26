@@ -1,0 +1,14 @@
+NEWS for GEOmap package
+======================
+
+1.6-05  2012-05-29
+	o    Fixed bug in sqrTICXY. Now lat lines are plotted correctly
+1.6-06  2012-05-31
+	o    Fixed bug in demcmap where n was fixed at 100
+1.7-2	2013-03-13
+	o	Update to meet requirements of R V3.0.0
+	o	Removed 4 functions that required data from package geomapdata:
+	o	DOTOPOMAPI  mapTeleSeis  plotusa  selectPOLImap
+	o   These functions caused NOTE alarms on compilation
+2.3	o   introduced several Datums and UTM conversions
+	

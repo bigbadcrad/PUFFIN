@@ -1,0 +1,22 @@
+Package: MBA
+Version: 0.0-9
+Date: 2017-02-20
+Encoding: UTF-8
+Title: Multilevel B-Spline Approximation
+Authors@R: c(person("Andrew", "Finley", role=c("aut", "cre"), email="finleya@msu.edu"), person("Sudipto", "Banerjee", role="aut"), person("Øyvind", "Hjelle", role="aut"), person("Roger", "Bivand", role="ctb"))
+Depends: R (> 2.10.0)
+Suggests: sp
+LinkingTo: BH
+Description: Functions to interpolate irregularly and regularly spaced data using Multilevel B-spline Approximation (MBA). Functions call portions of the SINTEF Multilevel B-spline Library written by Øyvind Hjelle which implements methods developed by Lee, Wolberg and Shin (1997; <doi:10.1109/2945.620490>).
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2017-03-07 16:15:17 UTC; andy
+Author: Andrew Finley [aut, cre],
+  Sudipto Banerjee [aut],
+  Øyvind Hjelle [aut],
+  Roger Bivand [ctb]
+Maintainer: Andrew Finley <finleya@msu.edu>
+Repository: CRAN
+Date/Publication: 2017-03-08 08:22:04
+Built: R 3.6.2; x86_64-w64-mingw32; 2019-12-27 15:25:53 UTC; windows
+Archs: i386, x64

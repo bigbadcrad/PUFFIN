@@ -1,0 +1,145 @@
+BASICTOPOMAP            Basic Topogrpahy Map
+CCcheck                 Counter Clockwise check
+ColorScale              Color Scale
+DATUMinfo               Datum information.
+DUMPLOC                 DUMP vectors to screen in list format
+EHB.LLZ                 Earthquake Location Data
+Ellipsoidal.Distance    Ellipsoidal Distance
+ExcludeGEOmap           Exclude GEOmap Strokes
+ExplodeSymbols          Explode symbols that overlap
+GEOTOPO                 Topographic Plot of geographic region
+GEOmap-package          GEOmap
+GEOmap.CombineStrokes   Combine strokes in a GEOmap list
+GEOmap.Extract          Extract from GEOmap
+GEOmap.breakline        Break a line at specified indeces into a list
+GEOmap.breakpoly        Break up a polygon
+GEOmap.cat              Concatenate Two GEOmaps
+GEOmap.list             GEOmap to list
+GEOsymbols              GEOsymbols
+GETXprofile             Cross sectional profile through a digital
+                        elevation map
+GLOB.XY                 Convert from GLOBAL LAT-LON to X-Y
+GLOBE.ORTH              Plot globe with orthogonal
+GlobeView               Global Plot
+KINOUT                  Map inside-outside
+LLlabel                 Nice Lat-Lon Label
+LOCPOLIMAP              LOCPOLIMAP
+LandSeaCol              Land and Sea Colors
+Lintersect              Finder intersection of lines
+Lll2xyz                 List Lat-Lon to cartesian XYZ
+Lxyz2ll                 Cartesian to Lat-Lon
+MAPconstants            Set Various Map Constants
+Markup                  Add markup information to an existing plot
+NSWath                  Cross sectional Swaths of Earthquakes over
+                        Japan
+NSarrow                 North-South Weather Vane Arrow
+NoOverlap               Shift Symbols
+OverTurned              Plot Overturned fault
+PointsAlong             Find spaced Points along a line
+SELGEOmap               Select parts of a GEOmap
+SETPOLIMAP              Set up polygons for World map Database
+SSfault                 Strike Slip Fault
+STROKEinfo              Stroke Information
+SynAnticline            Syncline and Anticline traces
+TOPOCOL                 Create Topography ColorMAP
+UTM.ll                  Map projection
+UTM.xy                  Map projection
+UTMzone                 UTM zone information
+X.prod                  Cross Product
+XSECDEMg                Cross Sections Using RPMG
+XSECEQ                  Iinteractive earthquake cross section
+XSECwin                 Cross sectional plot with earthquakes projected
+XY.GLOB                 Convert from XY to GLOBAL LAT-LON
+addLLXY                 Add Lat-Lon points using projection
+addTIX                  Add Tic marks to map
+along.great             Along A great Arc
+antipolygon             Fill the complement of a polygon
+bcars                   Plot Box Cars
+boundGEOmap             Set Bounds for GEOmap
+ccw                     Counter Clockwise Whorl
+coastmap                Global Coast Map
+darc                    Circular Arc
+demcmap                 Color Map from DEM
+difflon                 Difference between Longitudes
+distaz                  Distance and Azimuth from two points
+dms                     Convert decimal degrees to degree, minutes,
+                        seconds
+eqswath                 Extract a set of eathquakes in swath along a
+                        cross sectional line
+expandbound             Expand Bounds
+explode                 Explode Points
+faultdip                Show Fault dip
+faultperp               Fault Perpendiculars
+fixCoastwrap            Correct the Wrapping problem
+gclc                    Global to local coordinates
+geoLEGEND               Geological legend from GEOmap Structure
+geoarea                 Area of Map objects
+getETOPO                Get Subset ETOPO Digital elevation map
+getGEOmap               Get Geomap
+getGEOperim             Get Lat-Lon Perimeter
+getgreatarc             Great Circle Arc
+getmagsize              Earthquake Magnitude based on exponentional
+getnicetix              Nice Looking Lat-Lon pairs for plotting
+getspline               Get a spline curve along a set of points
+getsplineG              Get a spline curve along a set of points
+gmat                    Globe Rotation Matrix
+goodticdivs             Nice tic division
+horseshoe               Horseshoe Symbol
+inpoly                  Test set of points for inside/outside polygon
+insertNA                Insert NA in a vector
+insertvec               Insert a set of values in a vector
+inside                  Determine if point is inside polygon
+insideGEOmapXY          Get LAT-LON points that fall inside a map
+lamaz.eqarea            Lambert-Azimuthal Equal Area
+lcgc                    local coordinates to Global
+linesGEOmapXY           Add lines, points or text to GEOmap projected
+                        plot
+list.GEOmap             List stroke points in a GEOmap
+ll2xyz                  LAT-LON to xyz
+locworld                Locate points in worlmap
+mapTeleSeis             World Map with Teleseismic Ray-paths
+maplim                  Map Limits
+maps2GEOmap             Convert maps data to GEOmap format
+merid                   Orthogonal Projection of Meridian or Parallel
+niceLLtix               Nice DMS coordinates
+normalfault             Normal Fault trace
+ortho.proj              Orthogonal Map Projection
+perpen                  perpendicular marks along line
+pgon                    Plot regular polygon: pentagon, hexagon,
+                        octagon
+pline                   Point to line distance
+plotGEOmap              Plot a GEO map
+plotGEOmapXY            Plot a projected GEO map
+plotUTM                 Plot UTM
+plothypos               Plot Edicenters
+plotnicetix             Plot Lat-Lon tick marks
+plotusa                 Map of USA
+plotworldmap            Plot World Map with UTM sections
+polyintern              Internal point of polygon
+printGEOinfo            printGEOinfo
+printGEOmap             printGEOmap
+projtype                List of Projection types
+rectPERIM               Extract a rectangular perimeter
+rekt2line               Rectangle Line Overlap
+rose                    Rose Diagram
+rotateGEOmap            Rotate a GEOmap
+rotdelta4               rotation about Z-axis
+rotmat2D                set a rotation matrix
+rotx4                   x-axis rotation matrix
+roty4                   y-axis rotation matrix
+setMarkup               Set up mark up for maps
+setPROJ                 Set Projection
+setplotmat              set up matrices for selecting from eTOPO5
+settopocol              Topographic Color Map
+sizelegend              Magnitude size legend
+sqrTICXY                Tick marks for Square plot
+subsetTOPO              Subset a Topo map
+targetLL                Target Lat-Lon
+teeth                   Add Teeth to line
+thrust                  Thrust Fault
+trans4                  Translation matrix
+utm.sphr.ll             Map projection
+utm.sphr.xy             Map projection
+utmbox                  Get UTM Box info
+xyz2ll                  Cartesian to Lat-Lon
+zebra                   Horizontal Zebra Scale

@@ -1,0 +1,9 @@
+# Export all names
+exportPattern(".")
+importFrom("grDevices", "col2rgb", "colors", "dev.cur", "dev.new",
+             "dev.off", "dev.set", "gray", "grey", "hcl", "hsv", "pdf",
+             "png", "postscript", "rainbow", "rgb")
+importFrom("graphics", "abline", "contour", "image", "layout",
+             "locator", "par", "plot", "points", "rect", "segments",
+             "strheight", "strwidth", "text", "title")
+importFrom("stats", "lm", "runif")

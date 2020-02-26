@@ -1,0 +1,45 @@
+Gcols                   Get Color Palette
+HOZscale                add horizontal color scale
+OPTREPLOT               Replot Function for SELBUT
+RESCALE                 Rescale a vector to fit in a certain range
+RPMG-package            Really Poor Man's GUI: sets up buttons for a
+                        graphical user interface in R
+SELOPT                  Select Options
+SHOWPAL                 Show a palette of colors as a bar
+VVwheel                 Make a color rectangle (wheel)
+XSECDEM                 Cross Sections Using RPMG
+aGETXprofile            Cross sectional profile through a digital
+                        elevation map
+breakline.index         Break a vector into segments
+butdoc                  Button Documentation for RPMG codes
+chooser                 Iteractive Selection Winder
+circle                  circle coordinates
+colwheel                Choose rgb from a color rectangle
+cprint                  dump assignment
+endSCALE                Plot nice scale at end of trace.
+fmod                    Floating point remainer function
+getmem                  Get Member
+helpcolors              Help on Personal Color Palettes
+ilocator                Specialized Locator function
+itoxyz                  Vector Index to Matrix Index
+jpng                    png or pdf output
+jpostscript             Postscript Output
+label.it                Labels on Plots
+local.file              Get name for a Local file
+meshgrid                Create a mesh grid like in Matlab
+pastel.colors           pastel colors
+pickcolors              Pick a SYSTEM color
+rainbow.colors          rainbow.colors
+rowBUTTONS              Geometry for the Really Poor Man's GUI
+see.pal                 plot a rectangular palette
+sepia.colors            Sepia Color Palette
+setXMCOL                Set up color map from Geotouch
+shade.col               Shaded Color Palette
+slideshow               SlideShow
+textrect                Text labels with border
+wheelrgb                Plot a large color rectangle for color
+                        selection
+whichbutt               Determines which button was selected in RPGM
+writeCOMMENT            write Code Comments
+xyztoi                  Matrix Index to Vector index
+ymarginfo               Get information on Y-margin for plotting
