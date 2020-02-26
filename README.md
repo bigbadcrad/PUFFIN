@@ -36,7 +36,8 @@ PUFFIN can be run by running the "RunApp.R" script from the R console or through
 4) Click RStudio's "Run App" button
 
 ## Case Study Data
-Example datasets for two precipitation events are available here: https://doi.org/10.5281/zenodo.3687319 
+Example datasets for two precipitation events are available here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3687319.svg)](https://doi.org/10.5281/zenodo.3687319)
+
 
 ## Author
 * **Conrad Brendel** - cbrendel@vt.edu
