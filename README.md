@@ -35,6 +35,9 @@ PUFFIN can be run by running the "RunApp.R" script from the R console or through
 3) Open the "RunApp.R" script in RStudio
 4) Click RStudio's "Run App" button
 
+## Case Study Data
+Example datasets for two precipitation events are available here: 
+
 ## Author
 * **Conrad Brendel** - cbrendel@vt.edu
 
