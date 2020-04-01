@@ -17,12 +17,6 @@ ui=tagList(
                     ".help-button:hover {color:gray;}", #Hover Text Color for help buttons on tabs
                     ".help-button:focus {color:black;outline:0;}", #Changes help buttons back to black after clicking on them
 
-                    # CSS for home page containers
-                    ".container {width:100%;}",
-                    ".container__image {display:inline-block;vertical-align:top;width:25%;float:left;}",
-                    ".container__image_r {display:inline-block;vertical-align:top;width:13.5%;float:right;}",
-                    ".container__text {display:inline-block;width:50%;line-height:10vh;min-width:300px;}",
-                    
                     # CSS for sliders
                     ".irs-from {color: #333; background: rgba(0,0,0,0.25);font-weight: bold;}",
                     ".irs-to {color: #333; background: rgba(0,0,0,0.25);font-weight: bold;}",
@@ -55,15 +49,17 @@ ui=tagList(
   navbarPage('PUFFIN',id="Pages",collapsible=T,
              tabPanel(title="Home",value="home",
                       div(style='background-image: url("GUI/Background.png");background-size:100% 100%;width:100%;height:100%;position:absolute;left:0',
-                          HTML('<div class="container">
-                               <img class="container__image" style="min-width:150px;max-width:375px;top:1vh;padding:10px" src="GUI/Puffin.png" alt="Puffin">
-                               <img class="container__image_r" style="position:absolute;top:0.5vh;right:1vw;min-width:100px;" src="GUI/Logos.png" alt="Logos">
-                               <div class="container__text">
-                               <span style="line-height:10vmin;font-size:6vmin;position:relative;top:2vh;white-space:nowrap"><b>Welcome To</b></span><br>
-                               <span style="font-family:Impact;font-size:7vmax;line-height:15vmin;position:relative;"><b>PUFFIN</b></span><br>
-                               <p style="line-height:2.5vmin;font-size:3vmin;max-width:44vmax"><b>Probabilistic Urban Flash Flood Information Nexus</b></p>
-                               </div>
-                               </div>'),
+                          div(class="flex-container",style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;font-size:120%;margin-left:20px",
+                              div(HTML('<div><img style="min-width:150px;max-width:375px;top:1vh;padding:10px;margin-bottom:-10px" src="GUI/Puffin.png" alt="Puffin"></div>')),
+                              div(
+                                HTML('<div>
+                                        <span style="line-height:11vmin;font-size:6vmin;position:relative;top:2vh;white-space:nowrap"><b>Welcome To</b></span><br>
+                                        <span style="font-family:Impact;font-size:15vmin;line-height:15vmin;position:relative;"><b>PUFFIN</b></span><br>
+                                        <p style="line-height:3vmin;font-size:3vmin;max-width:44vmax"><b>Probabilistic Urban Flash Flood Information Nexus</b></p>
+                                      </div>')
+                              )
+                          ),
+                          HTML('<img style="position:absolute;top:0.5vh;right:1vw;min-width:100px;display:inline-block;vertical-align:top;width:13.5%;float:right" src="GUI/Logos.png" alt="Logos">'),
                           HTML('&nbsp'),
                           HTML('<h3></h3>'),
                           div(style="text-align:center;font-size:5vh;",HTML('<p><b>What Would You Like To View?</b></p>')),
