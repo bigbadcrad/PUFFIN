@@ -50,7 +50,7 @@ ui=tagList(
              tabPanel(title="Home",value="home",
                       div(style='background-image: url("GUI/Background.png");background-size:100% 100%;width:100%;height:100%;position:absolute;left:0',
                           div(class="flex-container",style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;font-size:120%;margin-left:20px",
-                              div(HTML('<div><img style="min-width:150px;max-width:375px;top:1vh;padding:10px;margin-bottom:-10px" src="GUI/Puffin.png" alt="Puffin"></div>')),
+                              div(HTML('<div><img style="min-width:150px;width:20vw;top:1vh;padding:10px;margin-bottom:-10px" src="GUI/Puffin.png" alt="Puffin"></div>')),
                               div(
                                 HTML('<div>
                                         <span style="line-height:11vmin;font-size:6vmin;position:relative;top:2vh;white-space:nowrap"><b>Welcome To</b></span><br>
