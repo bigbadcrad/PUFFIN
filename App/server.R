@@ -3258,7 +3258,8 @@ server=function(input,output,session){
   ### Get Values to create sliders
   slider_sc_max=reactive({
     req(input$Variable_sc)
-    roundToNice(max(SC_max()[which(SC_max()$Variable==unlist(sc_var_key[input$Variable_sc],use.names=F)),"Max"],na.rm=T))
+    max=roundToNice(max(SC_max()[which(SC_max()$Variable==unlist(sc_var_key[input$Variable_sc],use.names=F)),"Max"],na.rm=T))
+    max=ifelse(max>0,max,1)
   })
   slider_sc_from=reactive({
     from=roundFromNice(quantile(SC_max()$Max)[[2]]) # Get 25% Quantile and round to nice value
@@ -3280,7 +3281,8 @@ server=function(input,output,session){
   
   slider_link_max=reactive({
     req(input$Variable_link)
-    roundToNice(max(Link_max()[which(Link_max()$Variable==unlist(link_var_key[input$Variable_link],use.names=F)),"Max"],na.rm=T))
+    max=roundToNice(max(Link_max()[which(Link_max()$Variable==unlist(link_var_key[input$Variable_link],use.names=F)),"Max"],na.rm=T))
+    max=ifelse(max>0,max,1)
   })
   slider_link_from=reactive({
     from=roundFromNice(quantile(Link_max()$Max)[[2]]) # Get 25% Quantile and round to nice value
@@ -3302,7 +3304,8 @@ server=function(input,output,session){
   
   slider_node_max=reactive({
     req(input$Variable_node)
-    roundToNice(max(Node_max()[which(Node_max()$Variable==unlist(node_var_key[input$Variable_node],use.names=F)),"Max"],na.rm=T))
+    max=roundToNice(max(Node_max()[which(Node_max()$Variable==unlist(node_var_key[input$Variable_node],use.names=F)),"Max"],na.rm=T))
+    max=ifelse(max>0,max,1)
   })
   slider_node_from=reactive({
     from=roundFromNice(quantile(Link_max()$Max)[[2]]) # Get 25% Quantile and round to nice value
