@@ -929,7 +929,7 @@ server=function(input,output,session){
 
     # Get Times of last forecast used
     anc_time=ymd_hms(str_split(anc_model_runs()[length(anc_model_runs())],"_|\\.")[[1]][6])
-    hrrr_time=ymd_hms(paste0(gsub("https://nomads.ncep.noaa.gov:9090/dods/hrrr/hrrr","",hrrr_url())," ",regmatches(hrrr_model_runs(),regexpr("[[:digit:]]+",hrrr_model_runs())),":00:00"))
+    hrrr_time=ymd_hms(paste0(gsub("hrrr","",tail(str_split(hrrr_url(),"/")[[1]],1))," ",regmatches(hrrr_model_runs(),regexpr("[[:digit:]]+",hrrr_model_runs())),":00:00"))
     href_time=ymd_hms(paste0(regmatches(href_url(),regexpr("[[:digit:]]+",href_url()))," ",regmatches(href_model_runs()[1],regexpr("[[:digit:]]+",href_model_runs()[1])),":00:00"))
     sref_time=ymd_hms(paste0(sub("sref","",str_split(sref_url(),"/")[[1]][6])," ",str_sub(sref_model_runs()[1],-3,-2),":00:00"))
 
