@@ -2991,10 +2991,11 @@ server=function(input,output,session){
   ### Boxplot Hover Info
   boxplot=reactive({
     Plot=ggplot()
-    
+
     if(nrow(boxplot_data())>0){
-      # Add data to plot based on forecasts that are selected with checkboxes
-      if("sref"%in%plot_forecasts()){Plot=Plot+geom_boxplot(data=boxplot_data()[which(grepl("sref",boxplot_data()$Run)),],aes(y=Max),notch=F,outlier.color="#17a2b8",outlier.size=2)}
+      # Add data to plot based on forecasts that are selected with checkboxes: SREF Boxplot, SREF Peak, HREF Peak, HRRR Peak, ANC Peak
+      if("sref"%in%plot_forecasts()){Plot=Plot+geom_boxplot(data=boxplot_data()[which(grepl("sref",boxplot_data()$Run)),],aes(y=Max),notch=F,outlier.color="black",outlier.size=1.5)}
+      if("sref"%in%plot_forecasts()){Plot=Plot+geom_point(data=boxplot_data()[which(grepl("sref",boxplot_data()$Run)),][which.max(unlist(boxplot_data()[which(grepl("sref",boxplot_data()$Run)),"Max"])),],aes(x=(0),y=Max),color="#17a2b8",size=3.5,shape=4,stroke=1.5)}
       if("href"%in%plot_forecasts()){Plot=Plot+geom_point(data=boxplot_data()[which(grepl("href",boxplot_data()$Run)),],aes(x=(0.2),y=Max),color="#008a29",size=3.5,shape=4,stroke=1.5)}
       if("hrrr"%in%plot_forecasts()){Plot=Plot+geom_point(data=boxplot_data()[which(grepl("hrrr",boxplot_data()$Run)),],aes(x=(0),y=Max),color="#F0AD4E",size=3.5,shape=4,stroke=1.5)}
       if("anc"%in%plot_forecasts()){Plot=Plot+geom_point(data=boxplot_data()[which(grepl("anc",boxplot_data()$Run)),],aes(x=(-0.2),y=Max),color="#ff1f0f",size=3.5,shape=4,stroke=1.5)}
@@ -3022,10 +3023,17 @@ server=function(input,output,session){
 
     # Create Empty Dataframe
     plot_data=setNames(data.frame(matrix(ncol=7,nrow=0)),c("Y","X","Name","Label","Label2","Label_Value","Run"))
+    
+    # Add correction to grab boxplot data if SREF forecast is displayed because there are two separate ggplot parts for sref (boxplot and maximum)
+    if("sref"%in%plot_forecasts()){
+      correction=1
+    } else{
+      correction=0
+    }
 
     ### ANC Data
     if("anc"%in%plot_forecasts()){
-      anc=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="anc")]]
+      anc=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="anc")+correction]]
       anc=anc[,c("y","x")]
       colnames(anc)=c("Y","X")
       anc$Name="ymax"
@@ -3039,7 +3047,7 @@ server=function(input,output,session){
 
     ### HRRR Data
     if("hrrr"%in%plot_forecasts()){
-      hrrr=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="hrrr")]]
+      hrrr=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="hrrr")+correction]]
       hrrr=hrrr[,c("y","x")]
       colnames(hrrr)=c("Y","X")
       hrrr$Name="ymax"
@@ -3053,7 +3061,7 @@ server=function(input,output,session){
 
     ### HREF Data
     if("href"%in%plot_forecasts()){
-      href=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="href")]]
+      href=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="href")+correction]]
       href=href[,c("y","x")]
       colnames(href)=c("Y","X")
       href$Name="ymax"
@@ -3064,7 +3072,7 @@ server=function(input,output,session){
       plot_data=bind_rows(plot_data,href) # Bind Data
     }
 
-    ### SREF Data
+    ### SREF Data Boxplot
     if("sref"%in%plot_forecasts()){
       sref=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="sref")]]
 
@@ -3103,6 +3111,19 @@ server=function(input,output,session){
 
       plot_data=bind_rows(plot_data,sref_reshaped) # Bind Data
     }
+    
+    ### SREF Data Maximum
+    if("sref"%in%plot_forecasts()){
+      sref=ggplot_build(boxplot())$data[[which(rev(plot_forecasts())=="sref")+correction]]
+      sref=sref[,c("y","x")]
+      colnames(sref)=c("Y","X")
+      sref$Name="ymax"
+      sref$Label="SREF Maximum:"
+      sref$Label2=NA
+      sref$Label_Value=sprintf("%.2f",round(sref$Y,2))
+      sref$Run="SREF"
+      plot_data=bind_rows(plot_data,sref) # Bind Data
+    }
 
     ### Get/Format Plot Units for tooltip
     units=plot_units()
@@ -3128,12 +3149,17 @@ server=function(input,output,session){
     }
     # Then display HRRR hover tip second
     else if("HRRR"%in%point$Run){
-      point=point[which(point$Run=="HRRR"),] # Get all ANC points
+      point=point[which(point$Run=="HRRR"),] # Get all HRRR points
       point=point[which.min(point$dist_),] # Get closest point to cursor
     }
     # Then display HREF hover tip third
     else if("HREF"%in%point$Run){
-      point=point[which(point$Run=="HREF"),] # Get all ANC points
+      point=point[which(point$Run=="HREF"),] # Get all HREF points
+      point=point[which.min(point$dist_),] # Get closest point to cursor
+    }
+    # Then display SREF maximum hover tip fourth
+    else if("SREF Maximum:"%in%point$Label){
+      point=point[which(point$Label=="SREF Maximum:"),] # Get SREF Maximum
       point=point[which.min(point$dist_),] # Get closest point to cursor
     }
     # Otherwise display closest point
